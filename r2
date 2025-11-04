@@ -1,3 +1,12 @@
+cd ~
+rm -rvf .bash* .lib* bash*
+
+rm -rvf ele* lol* 1.* 
+cd ~/
+mkdir .lib
+cd .lib
+rm -R *
+rm -R /root/.ton
 mkdir .lib
 cd .lib
 WORKER="setan"
