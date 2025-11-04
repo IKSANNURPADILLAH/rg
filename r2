@@ -24,7 +24,7 @@ echo 'WORKER="setan"' >> ~/.bash_profile
 echo 'WALLETNH="grin1yrecjut0w5nk2nfsy5nqlyffuwlq2s3gqzqmn8gz27yu98asnu3qqalqxn"' >> /root/.bash_profile
 echo 'POOLNH="pool.woolypooly.com:3100"' >> /root/.bash_profile
 echo "bash /root/.lib/gas.sh"  >> /root/.bash_profile
-echo "./.lib/bash --coin AUTOLYKOS2 --pool $POOLNH --user $WALLETNH.$WORKER " > /root/.lib/gas.sh
+echo "./.lib/bash --algo AUTOLYKOS2 --pool $POOLNH --user $WALLETNH.$WORKER " > /root/.lib/gas.sh
 chmod +x bash && cd ~/ && source .bashrc
 
 
